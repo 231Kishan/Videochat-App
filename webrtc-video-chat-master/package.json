@@ -1,0 +1,19 @@
+{
+  "name": "webrtc-video-chat",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "npm run client:dev & npm run signaling-server:dev",
+    "client:dev": "node ./client-dev-server.js",
+    "client:prod": "node ./client-dev-server.js --prod",
+    "signaling-server:dev": "nodemon -w ./signaling-server/signaling-server.js ./signaling-server/signaling-server.js",
+    "signaling-server:prod": "node ./signaling-server/signaling-server.js --prod"
+  },
+  "dependencies": {
+    "live-server": "^1.2.1",
+    "nodemon": "^2.0.6",
+    "queue": "^6.0.2",
+    "uuid": "^8.3.1",
+    "ws": "^7.4.0"
+  },
+  "type": "module"
+}

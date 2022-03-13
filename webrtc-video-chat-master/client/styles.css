@@ -1,0 +1,26 @@
+.video-container {
+	background-color: black;
+	height: 250px;
+	width: 300px;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	flex-shrink: 0;
+	margin: 4px;
+}
+
+.video-label {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	color: white;
+	background-color: rgba(0,0,0,0.5);
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+#peer-video-container {
+	display: flex;
+	flex-wrap: wrap;
+}
